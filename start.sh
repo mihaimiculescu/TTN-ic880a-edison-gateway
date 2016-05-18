@@ -1,16 +1,65 @@
 #! /bin/bash
 
-# Reset iC880a PIN
-SX1301_RESET_BCM_PIN=25
-echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/export 
-echo "out" > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/direction 
-echo "0"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value 
-sleep 0.1  
-echo "1"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value 
-sleep 0.1  
-echo "0"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value
-sleep 0.1
-echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/unexport 
+#Set Edison IO10-13 pins for SPI mode and use IO9 pin to drive iC880A-SPI's Reset pin 
+# Note: I10-13 are mandatory, IO9 is by choice, simply because it is the next available pin ...
+echo 111 > /sys/class/gpio/export
+echo 115 > /sys/class/gpio/export
+echo 114 > /sys/class/gpio/export
+echo 109 > /sys/class/gpio/export
+echo 263 > /sys/class/gpio/export
+echo 240 > /sys/class/gpio/export
+echo 262 > /sys/class/gpio/export
+echo 241 > /sys/class/gpio/export
+echo 242 > /sys/class/gpio/export
+echo 243 > /sys/class/gpio/export
+echo 258 > /sys/class/gpio/export
+echo 259 > /sys/class/gpio/export
+echo 260 > /sys/class/gpio/export
+echo 261 > /sys/class/gpio/export
+echo 226 > /sys/class/gpio/export
+echo 227 > /sys/class/gpio/export
+echo 228 > /sys/class/gpio/export
+echo 229 > /sys/class/gpio/export
+echo 257 > /sys/class/gpio/export
+echo 225 > /sys/class/gpio/export
+echo 214 > /sys/class/gpio/export
+echo low > /sys/class/gpio/gpio214/direction 
+echo high > /sys/class/gpio/gpio263/direction
+echo high > /sys/class/gpio/gpio240/direction
+echo high > /sys/class/gpio/gpio262/direction
+echo high > /sys/class/gpio/gpio241/direction
+echo high > /sys/class/gpio/gpio242/direction
+echo high > /sys/class/gpio/gpio243/direction
+echo high > /sys/class/gpio/gpio258/direction
+echo high > /sys/class/gpio/gpio259/direction
+echo low > /sys/class/gpio/gpio260/direction
+echo high > /sys/class/gpio/gpio261/direction
+echo high > /sys/class/gpio/gpio257/direction
+echo in > /sys/class/gpio/gpio225/direction
+echo in > /sys/class/gpio/gpio226/direction
+echo in > /sys/class/gpio/gpio227/direction
+echo in > /sys/class/gpio/gpio228/direction
+echo in > /sys/class/gpio/gpio229/direction
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
+echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux
+echo high > /sys/class/gpio/gpio214/direction 
+# End Edison settings
+
+## Reset iC880a PIN Pi style
+# SX1301_RESET_BCM_PIN=25
+# echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/export 
+# echo "out" > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/direction 
+# echo "0"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value 
+# sleep 0.1  
+# echo "1"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value 
+# sleep 0.1  
+# echo "0"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value
+# sleep 0.1
+# echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/unexport 
+## End Reset iC880a PIN Pi style
 
 # Test the connection, wait if needed.
 while [[ $(ping -c1 google.com 2>&1 | grep " 0% packet loss") == "" ]]; do
