@@ -48,6 +48,10 @@ echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux
 echo high > /sys/class/gpio/gpio214/direction 
 # End Edison settings
 
+# Reset iC880A-SPI
+TODO
+# End reset iC880A-SPI
+
 ## Reset iC880a PIN Pi style
 # SX1301_RESET_BCM_PIN=25
 # echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/export 
