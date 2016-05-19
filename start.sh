@@ -1,6 +1,6 @@
 # Set Arduino for Edison IO10-13 pins for SPI mode and use IO9 pin to drive iC880A-SPI's Reset pin 
 # Note: I10-13 are mandatory, IO9 is by choice, simply because it is the next available pin ...
-# Edion convention: 1=high=out
+# Edion convention: 1=high=out. It follows to the letter the Arduino for Edison hardware manual
 echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it
 echo 115 > /sys/class/gpio/export
 echo 114 > /sys/class/gpio/export
