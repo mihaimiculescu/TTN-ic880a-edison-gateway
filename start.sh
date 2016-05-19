@@ -1,6 +1,4 @@
-#! /bin/bash
-
-# Set Edison IO10-13 pins for SPI mode and use IO9 pin to drive iC880A-SPI's Reset pin 
+# Set Arduino for Edison IO10-13 pins for SPI mode and use IO9 pin to drive iC880A-SPI's Reset pin 
 # Note: I10-13 are mandatory, IO9 is by choice, simply because it is the next available pin ...
 # Edion convention: 1=high=out
 echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it
@@ -61,19 +59,6 @@ echo 0 > /sys/class/gpio/gpio183/value
 sleep 0.1
 echo 183 > /sys/class/gpio/unexport 
 # End reset iC880A-SPI
-
-## Reset iC880a PIN Pi style
-# SX1301_RESET_BCM_PIN=25
-# echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/export 
-# echo "out" > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/direction 
-# echo "0"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value 
-# sleep 0.1  
-# echo "1"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value 
-# sleep 0.1  
-# echo "0"   > /sys/class/gpio/gpio$SX1301_RESET_BCM_PIN/value
-# sleep 0.1
-# echo "$SX1301_RESET_BCM_PIN"  > /sys/class/gpio/unexport 
-## End Reset iC880a PIN Pi style
 
 # Test the connection, wait if needed.
 while [[ $(ping -c1 google.com 2>&1 | grep " 0% packet loss") == "" ]]; do
