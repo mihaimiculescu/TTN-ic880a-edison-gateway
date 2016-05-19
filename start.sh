@@ -24,7 +24,7 @@ echo 229 > /sys/class/gpio/export
 echo 257 > /sys/class/gpio/export
 echo 225 > /sys/class/gpio/export
 echo 214 > /sys/class/gpio/export #this is the tri-state-all control - default out. You might get an error also at this line,
-ignore it
+                                  #ignore it
 echo in > /sys/class/gpio/gpio214/direction #put it in the tri-state status
 echo out > /sys/class/gpio/gpio263/direction
 echo out > /sys/class/gpio/gpio240/direction
