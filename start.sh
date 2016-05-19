@@ -21,8 +21,8 @@ echo 226 > /sys/class/gpio/export
 echo 227 > /sys/class/gpio/export
 echo 228 > /sys/class/gpio/export
 echo 229 > /sys/class/gpio/export
-echo 257 > /sys/class/gpio/export
-echo 225 > /sys/class/gpio/export
+echo 257 > /sys/class/gpio/export # direction for IO9
+echo 225 > /sys/class/gpio/export # pullup resistor for IO9
 echo 214 > /sys/class/gpio/export #this is the tri-state-all control - default out. You might get an error also at this line,
                                   #ignore it
 echo in > /sys/class/gpio/gpio214/direction #put it in the tri-state status
@@ -36,8 +36,8 @@ echo out > /sys/class/gpio/gpio258/direction
 echo out > /sys/class/gpio/gpio259/direction
 echo in > /sys/class/gpio/gpio260/direction
 echo out > /sys/class/gpio/gpio261/direction
-echo out > /sys/class/gpio/gpio257/direction
-echo in > /sys/class/gpio/gpio225/direction
+echo out > /sys/class/gpio/gpio257/direction #sets IO9 as output
+echo in > /sys/class/gpio/gpio225/direction #disable pullup resistor for IO9
 echo in > /sys/class/gpio/gpio226/direction
 echo in > /sys/class/gpio/gpio227/direction
 echo in > /sys/class/gpio/gpio228/direction
@@ -46,12 +46,20 @@ echo mode1 > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux
 echo mode1 > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
 echo mode1 > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
 echo mode1 > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
-echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux
+echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux #mode0 selects GPIO, not PWM for IO9
 echo out > /sys/class/gpio/gpio214/direction 
 # End Edison settings
 
-# Reset iC880A-SPI
-TODO
+# Reset iC880A-SPI using IO9 from Arduino
+echo 183 > /sys/class/gpio/export
+echo high > /sys/class/gpio/gpio183/direction
+echo 0 > /sys/class/gpio/gpio183/value
+sleep 0.1  
+echo 1 > /sys/class/gpio/gpio183/value
+sleep 0.1  
+echo 0 > /sys/class/gpio/gpio183/value
+sleep 0.1
+echo 183 > /sys/class/gpio/unexport 
 # End reset iC880A-SPI
 
 ## Reset iC880a PIN Pi style
