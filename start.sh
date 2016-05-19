@@ -52,11 +52,11 @@ echo high > /sys/class/gpio/gpio214/direction
 echo 183 > /sys/class/gpio/export
 echo high > /sys/class/gpio/gpio183/direction
 echo 0 > /sys/class/gpio/gpio183/value
-sleep 0.1  
+sleep 1  
 echo 1 > /sys/class/gpio/gpio183/value
-sleep 0.1  
+sleep 1  
 echo 0 > /sys/class/gpio/gpio183/value
-sleep 0.1
+sleep 1
 echo 183 > /sys/class/gpio/unexport 
 # End reset iC880A-SPI
 
