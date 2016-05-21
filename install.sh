@@ -13,7 +13,7 @@ if [[ $1 != "" ]]; then VERSION=$1; fi
 
 echo "The Things Network Gateway installer"
 echo "Version $VERSION"
-
+# ZONA DE VERIFICAT - PARTEA DE CORELARE CU GIT
 # Update the gateway installer to the correct branch
 echo "Updating installer files..."
 OLD_HEAD=$(git rev-parse HEAD)
@@ -26,14 +26,14 @@ if [[ $OLD_HEAD != $NEW_HEAD ]]; then
     echo "New installer found. Restarting process..."
     exec "./install.sh" "$VERSION"
 fi
-
-# Request gateway configuration data
+# SFARSIT ZONA DE VERIFICAT
+# Request gateway configuration data - WORKS ON EDISON
 # There are two ways to do it, manually specify everything
 # or rely on the gateway EUI and retrieve settings files from remote (recommended)
 echo "Gateway configuration:"
 
 # Try to get gateway ID from MAC address
-# First try eth0, if that does not exist, try wlan0 (for RPi Zero)
+# First try eth0, if that does not exist, try wlan0 (for RPi Zero AND Edison)
 GATEWAY_EUI_NIC="eth0"
 if [[ `grep "$GATEWAY_EUI_NIC" /proc/net/dev` == "" ]]; then
     GATEWAY_EUI_NIC="wlan0"
@@ -48,7 +48,7 @@ GATEWAY_EUI=$(ip link show $GATEWAY_EUI_NIC | awk '/ether/ {print $2}' | awk -F\
 GATEWAY_EUI=${GATEWAY_EUI^^} # toupper
 
 echo "Detected EUI $GATEWAY_EUI from $GATEWAY_EUI_NIC"
-
+# VERIFIED SO FAR
 read -r -p "Do you want to use remote settings file? [y/N]" response
 response=${response,,} # tolower
 
