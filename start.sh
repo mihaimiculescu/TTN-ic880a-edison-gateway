@@ -1,6 +1,8 @@
+#!/bin/bash
 # Set Arduino for Edison IO10-13 pins for SPI mode and use IO9 pin to drive iC880A-SPI's Reset pin 
 # Note: I10-13 are mandatory, IO9 is by choice, simply because it is the next available pin ...
-# Edion convention: 1=high=out. It follows to the letter the Arduino for Edison hardware manual
+# Edion setup follows to the letter the Arduino for Edison hardware manual.
+# All uncommented lines in this section refer to IO10-13 setup
 echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it
 echo 115 > /sys/class/gpio/export
 echo 114 > /sys/class/gpio/export
@@ -21,8 +23,7 @@ echo 228 > /sys/class/gpio/export
 echo 229 > /sys/class/gpio/export
 echo 257 > /sys/class/gpio/export
 echo 225 > /sys/class/gpio/export
-echo 214 > /sys/class/gpio/export #this is the tri-state-all control - default out. You might get an error also at this line,
-                                  #ignore it
+echo 214 > /sys/class/gpio/export #this is the tri-state-all control. You might get an error also at this line,ignore it
 echo low > /sys/class/gpio/gpio214/direction #put it in the tri-state status
 echo high > /sys/class/gpio/gpio263/direction
 echo high > /sys/class/gpio/gpio240/direction
@@ -65,6 +66,7 @@ while [[ $(ping -c1 google.com 2>&1 | grep " 0% packet loss") == "" ]]; do
   echo "[TTN Gateway]: Waiting for internet connection..."
   sleep 30
   done
+echo "[TTN Gateway]: Internet connection present"
 
 # If there's a remote config, try to update it
 if [ -d ../gateway-remote-config ]; then
