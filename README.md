@@ -15,7 +15,7 @@ Detailed instructions will follow soon.
 
         # git clone https://github.com/ttn-zh/ic880a-gateway.git ~/ic880a-gateway
         # cd ~/ic880a-gateway
-        # ./install.sh spi - no sudo on Edison
+        # ./install.sh spi # - no sudo on Edison
 
 ## Update - NOT COMPLETE YET
 
