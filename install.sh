@@ -177,4 +177,4 @@ systemctl enable ttn-gateway.service
 
 echo "The system will reboot in 5 seconds..."
 sleep 5
-shutdown -r now
+reboot # replaces shutdown -r now
