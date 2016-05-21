@@ -53,7 +53,7 @@ echo high > /sys/class/gpio/gpio214/direction
 echo 183 > /sys/class/gpio/export
 echo high > /sys/class/gpio/gpio183/direction
 echo 0 > /sys/class/gpio/gpio183/value
-sleep 1  
+sleep 1  # only integers accepted as arguments for sleep ... 
 echo 1 > /sys/class/gpio/gpio183/value
 sleep 1  
 echo 0 > /sys/class/gpio/gpio183/value
