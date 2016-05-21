@@ -10,12 +10,12 @@ Note: If you want to use also the [Grove base shield](http://www.seeedstudio.com
 Detailed instructions will follow soon. 
 
 ## Installation NOT COMPLETE YET
-- Login as root - this gives you all the necessary rights
+- Login as root - this gives you all the necessary rights. No sudo available on Edison
 - Clone the installer and start the installation
 
         # git clone https://github.com/ttn-zh/ic880a-gateway.git ~/ic880a-gateway
         # cd ~/ic880a-gateway
-        # ./install.sh spi # - no sudo on Edison
+        # ./install.sh spi
 
 ## Update - NOT COMPLETE YET
 
