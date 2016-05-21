@@ -2,11 +2,11 @@
 
 # Stop on the first sign of trouble
 set -e
-
-if [ $UID != 0 ]; then
-    echo "ERROR: Operation not permitted. Forgot sudo?"
-    exit 1
-fi
+# sudo check unnecessary on Edison
+# if [ $UID != 0 ]; then
+#     echo "ERROR: Operation not permitted. Forgot sudo?"
+#     exit 1
+#  fi
 
 VERSION="spi"
 if [[ $1 != "" ]]; then VERSION=$1; fi
