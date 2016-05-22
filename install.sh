@@ -60,9 +60,9 @@ else
     read NEW_HOSTNAME
     if [[ $NEW_HOSTNAME == "" ]]; then NEW_HOSTNAME="ttn-gateway"; fi
 
-    printf "       Descriptive name [ttn-ic880a]:"
+    printf "       Descriptive name [ttn-Edison+ic880a]:"
     read GATEWAY_NAME
-    if [[ $GATEWAY_NAME == "" ]]; then GATEWAY_NAME="ttn-ic880a"; fi
+    if [[ $GATEWAY_NAME == "" ]]; then GATEWAY_NAME="ttn-Edison+ic880a"; fi
 
     printf "       Contact email: "
     read GATEWAY_EMAIL
@@ -96,13 +96,13 @@ INSTALL_DIR="/opt/ttn-gateway"
 if [ ! -d "$INSTALL_DIR" ]; then mkdir $INSTALL_DIR; fi
 pushd $INSTALL_DIR
 
-# Remove WiringPi built from source (older installer versions)
-if [ -d wiringPi ]; then
-    pushd wiringPi
-    ./build uninstall
-    popd
-    rm -rf wiringPi
-fi 
+# Remove WiringPi built from source (older installer versions). Not necessary with Edison 
+# if [ -d wiringPi ]; then
+#     pushd wiringPi
+#     ./build uninstall
+#     popd
+#     rm -rf wiringPi
+# fi 
 
 # Build LoRa gateway app
 if [ ! -d lora_gateway ]; then
