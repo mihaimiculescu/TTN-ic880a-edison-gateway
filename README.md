@@ -13,8 +13,8 @@ Detailed instructions will follow soon.
 - Login as root - this gives you all the necessary rights. No sudo available on Edison
 - Clone the installer and start the installation
 
-        # git clone https://github.com/ttn-zh/ic880a-gateway.git ~/ic880a-gateway
-        # cd ~/ic880a-gateway
+        # git clone https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway ~/TTN-ic880a-edison-gateway
+        # cd ~/TTN-ic880a-edison-gateway
         # ./install.sh spi
 
 ## Update - NOT COMPLETE YET
