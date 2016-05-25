@@ -8,25 +8,25 @@ set -e
 #     exit 1
 #  fi
 
-VERSION="spi"
-if [[ $1 != "" ]]; then VERSION=$1; fi
+VERSION="spi for Intel Edison on Arduino"
+#if [[ $1 != "" ]]; then VERSION=$1; fi not needed since ve do not support USB version
 
 echo "The Things Network Gateway installer"
 echo "Version $VERSION"
-# ZONA DE VERIFICAT - PARTEA DE CORELARE CU GIT
+
 # Update the gateway installer to the correct branch
 echo "Updating installer files..."
 OLD_HEAD=$(git rev-parse HEAD)
 git fetch
-git checkout -q $VERSION
+git checkout -q spi #changed to point directly to spi branch, since there is no USB support
 git pull
 NEW_HEAD=$(git rev-parse HEAD)
 
 if [[ $OLD_HEAD != $NEW_HEAD ]]; then
     echo "New installer found. Restarting process..."
-    exec "./install.sh" "$VERSION"
+    exec "./install.sh" # "$VERSION" removes since there is no USB support
 fi
-# SFARSIT ZONA DE VERIFICAT
+
 # Request gateway configuration data - WORKS ON EDISON
 # There are two ways to do it, manually specify everything
 # or rely on the gateway EUI and retrieve settings files from remote (recommended)
