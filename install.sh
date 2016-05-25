@@ -13,20 +13,32 @@ VERSION="spi for Intel Edison on Arduino"
 
 echo "The Things Network Gateway installer"
 echo "Version $VERSION"
-
-# Update the gateway installer to the correct branch
-echo "Updating installer files..."
-OLD_HEAD=$(git rev-parse HEAD)
-git fetch
-git checkout -q spi #changed to point directly to spi branch, since there is no USB support
-git pull
-NEW_HEAD=$(git rev-parse HEAD)
-
-if [[ $OLD_HEAD != $NEW_HEAD ]]; then
-    echo "New installer found. Restarting process..."
-    exec "./install.sh" # "$VERSION" removes since there is no USB support
+#Check for Intel Edison present and has Yocto Linux
+if [[ $(find /usr/i586-poky-linux 2>&1 | grep "/usr/i586-poky-linux") == "" ]]; then
+  echo "[TTN Gateway]: Either this is not an Intel Edison,"
+  echo "[TTN Gateway]: or you don't have Yocto flashed, aborting ..."
+  exit 1
 fi
 
+#Check if the Edison is mounted on an Arduino board
+if [[ $(cat /sys/kernel/debug/gpio | grep "Arduino Shield") == "" ]]; then
+  echo "[TTN Gateway]: Arduino Shield not present, aborting..."
+  exit 1
+fi
+
+# Update the gateway installer to the correct branch - NOT NEEDED - spi version only
+# echo "Updating installer files..."
+# OLD_HEAD=$(git rev-parse HEAD)
+# git fetch
+# git checkout -q spi #changed to point directly to spi branch, since there is no USB support
+# git pull
+# NEW_HEAD=$(git rev-parse HEAD)
+
+# if [[ $OLD_HEAD != $NEW_HEAD ]]; then
+#     echo "New installer found. Restarting process..."
+#     exec "./install.sh" "$VERSION" removes since there is no USB support
+# fi
+# end Update the gateway installer to the correct branch - NOT NEEDED - spi version only section
 # Request gateway configuration data - WORKS ON EDISON
 # There are two ways to do it, manually specify everything
 # or rely on the gateway EUI and retrieve settings files from remote (recommended)
