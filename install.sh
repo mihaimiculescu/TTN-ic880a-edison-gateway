@@ -26,7 +26,7 @@ if [[ $(cat /sys/kernel/debug/gpio | grep "Arduino Shield") == "" ]]; then
   exit 1
 fi
 
-# Update the gateway installer to the correct branch - perhaps not needed? - spi version only
+# Update the gateway installer to the correct branch
 echo "Updating installer files..."
 OLD_HEAD=$(git rev-parse HEAD)
 git fetch
@@ -40,8 +40,8 @@ if [[ $OLD_HEAD != $NEW_HEAD ]]; then
   else
      echo "All set!"
 fi
-# end Update the gateway installer to the correct branch - NOT NEEDED - spi version only section
-# Request gateway configuration data - WORKS ON EDISON
+
+# Request gateway configuration data - WORKS with wlan0 ON EDISON
 # There are two ways to do it, manually specify everything
 # or rely on the gateway EUI and retrieve settings files from remote (recommended)
 echo "Gateway configuration:"
