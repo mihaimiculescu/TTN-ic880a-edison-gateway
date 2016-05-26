@@ -14,6 +14,7 @@ Detailed instructions will follow soon.
  - 1.1 Flash your Edison with the last Yocto image [as explained here] (http://www.intel.com/content/www/us/en/support/boards-and-kits/000005795.html)
  - 1.2 install git [as explained here](https://github.com/w4ilun/edison-guides/wiki/Installing-Git-on-Intel-Edison)
  - 1.3 Login as root - this gives you all the necessary rights. No sudo available on Edison
+
 ##### 2. Clone the installer and start the installation
 
         # git clone https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway ~/TTN-ic880a-edison-gateway
