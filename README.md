@@ -30,4 +30,4 @@ If you have a running gateway and want to update, simply run the installer again
 
 # Credits
 
-###### These scripts are largely based on the awesome work by [Ruud Vlaming](https://github.com/devlaam) on the [Lorank8 installer](https://github.com/Ideetron/Lorank) and [Gonzalo Casas](https://github.com/gonzalocasas) on the [ic880A installer](https://github.com/ttn-zh/ic880a-gateway)
+###### These scripts are largely based on the awesome work by [Ruud Vlaming](https://github.com/devlaam) on the [Lorank8 installer](https://github.com/Ideetron/Lorank) and [Gonzalo Casas](https://github.com/gonzalocasas) on the [ic880A + Raspberry Pi installer](https://github.com/ttn-zh/ic880a-gateway)
