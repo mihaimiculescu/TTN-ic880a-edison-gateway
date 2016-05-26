@@ -6,4 +6,4 @@ This installer **does not support the USB version** of the iC880a board.
 
 If you have the SPI version, please proceed by **[CLICKING HERE.](https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway/tree/spi)**
 
-**              Happy installing! :)             **
+So ...              **Happy installing! :)**
