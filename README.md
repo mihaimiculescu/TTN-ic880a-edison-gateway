@@ -2,7 +2,7 @@
 ## - work in progress -
 Reference setup for [The Things Network](http://thethingsnetwork.org/) gateways based on the iC880a SPI concentrator with a Intel® Edison Kit for Arduino as host.
 
-This installer targets the **SPI version** of the board.
+This installer targets the **SPI version** of the board. The USB version is not supported
 
 ## Setup
 Connect the iC880a-SPI board to the Arduino [as shown in this picture](images/Connexions.jpg)
@@ -10,20 +10,23 @@ Note: If you want to use also the [Grove base shield](http://www.seeedstudio.com
 Detailed instructions will follow soon. 
 
 ## Installation NOT COMPLETE YET
+###1. If you haven't done so already:
+#### - 1.1 Flash your Edison with the last Yocto image [as explained here] (http://www.intel.com/content/www/us/en/support/boards-and-kits/000005795.html)
+#### - 1.2 install git [as explained here]
 - Login as root - this gives you all the necessary rights. No sudo available on Edison
 - Clone the installer and start the installation
 
         # git clone https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway ~/TTN-ic880a-edison-gateway
         # cd ~/TTN-ic880a-edison-gateway
-        # ./install.sh spi
+        # ./install.sh
 
 ## Update - NOT COMPLETE YET
 
 If you have a running gateway and want to update, simply run the installer again:
 
-        # cd ~/ic880a-gateway
-        # ./install.sh spi
+        # ~/TTN-ic880a-edison-gateway
+        # ./install.sh
 
 # Credits - NOT COMPLETE YET
 
-These scripts are largely based on the awesome work by [Ruud Vlaming](https://github.com/devlaam) on the [Lorank8 installer](https://github.com/Ideetron/Lorank).
+These scripts are largely based on the awesome work by [Ruud Vlaming](https://github.com/devlaam) on the [Lorank8 installer](https://github.com/Ideetron/Lorank) and [Gonzalo Casas](https://github.com/gonzalocasas) on the [ic880A installer](https://github.com/ttn-zh/ic880a-gateway)
