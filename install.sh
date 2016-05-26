@@ -38,7 +38,7 @@ if [[ $OLD_HEAD != $NEW_HEAD ]]; then
      echo "New installer found. Restarting process..."
      exec "./install.sh" # "$VERSION" removed since there is no USB support
   else
-     echo "Newest installer detected."
+     echo "All set!"
 fi
 # end Update the gateway installer to the correct branch - NOT NEEDED - spi version only section
 # Request gateway configuration data - WORKS ON EDISON
