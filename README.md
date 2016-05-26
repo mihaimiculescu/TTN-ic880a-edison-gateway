@@ -24,7 +24,7 @@ Detailed instructions will follow soon.
 
 If you have a running gateway and want to update, simply run the installer again:
 
-        # ~/TTN-ic880a-edison-gateway
+        # cd ~/TTN-ic880a-edison-gateway
         # ./install.sh
 
 # Credits
