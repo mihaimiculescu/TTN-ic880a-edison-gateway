@@ -13,7 +13,7 @@ VERSION="spi for Intel Edison on Arduino"
 
 echo "The Things Network Gateway installer"
 echo "Version $VERSION"
-#Check for Intel Edison present and has Yocto Linux
+#Check that Intel Edison is present and has Yocto Linux flashed
 if [[ $(find /usr/i586-poky-linux 2>&1 | grep "/usr/i586-poky-linux") == "" ]]; then
   echo "[TTN Gateway]: Either this is not an Intel Edison,"
   echo "[TTN Gateway]: or you don't have Yocto flashed, aborting ..."
