@@ -126,7 +126,7 @@ else
     git pull
 fi
 
-sed -i -e 's/PLATFORM= kerlink/PLATFORM= imst_rpi/g' ./libloragw/library.cfg
+sed -i -e 's/PLATFORM= kerlink/PLATFORM= imst_edison/g' ./libloragw/library.cfg #Modified to include imst_edison.h
 
 make
 
