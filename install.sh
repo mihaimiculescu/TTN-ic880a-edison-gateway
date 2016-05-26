@@ -26,18 +26,20 @@ if [[ $(cat /sys/kernel/debug/gpio | grep "Arduino Shield") == "" ]]; then
   exit 1
 fi
 
-# Update the gateway installer to the correct branch - NOT NEEDED - spi version only
-# echo "Updating installer files..."
-# OLD_HEAD=$(git rev-parse HEAD)
-# git fetch
-# git checkout -q spi #changed to point directly to spi branch, since there is no USB support
-# git pull
-# NEW_HEAD=$(git rev-parse HEAD)
+# Update the gateway installer to the correct branch - perhaps not needed? - spi version only
+echo "Updating installer files..."
+OLD_HEAD=$(git rev-parse HEAD)
+git fetch
+git checkout -q spi #changed to point directly to spi branch, since there is no USB support
+git pull
+NEW_HEAD=$(git rev-parse HEAD)
 
-# if [[ $OLD_HEAD != $NEW_HEAD ]]; then
-#     echo "New installer found. Restarting process..."
-#     exec "./install.sh" "$VERSION" removes since there is no USB support
-# fi
+if [[ $OLD_HEAD != $NEW_HEAD ]]; then
+     echo "New installer found. Restarting process..."
+     exec "./install.sh" # "$VERSION" removed since there is no USB support
+  else
+     echo "Newest installer detected."
+fi
 # end Update the gateway installer to the correct branch - NOT NEEDED - spi version only section
 # Request gateway configuration data - WORKS ON EDISON
 # There are two ways to do it, manually specify everything
