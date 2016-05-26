@@ -162,7 +162,7 @@ if [ -e $LOCAL_CONFIG_FILE ]; then rm $LOCAL_CONFIG_FILE; fi;
 if [ "$REMOTE_CONFIG" = true ] ; then
     # Get remote configuration repo
     if [ ! -d gateway-remote-config ]; then
-        git clone https://github.com/ttn-zh/gateway-remote-config.git
+        git clone https://github.com/ttn-zh/gateway-remote-config.git # to be discussed with Gonzalo
         pushd gateway-remote-config
     else
         pushd gateway-remote-config
