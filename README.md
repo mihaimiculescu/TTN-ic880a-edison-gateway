@@ -1,4 +1,4 @@
-# The Things Network: iC880a-based gateway
+# The Things Network: Intel Edison + iC880a - based gateway
 
 Welcome to the reference setup for [The Things Network](http://thethingsnetwork.org/) gateways based on the iC880a SPI concentrator with a Intel® Edison Kit for Arduino as host!
 
