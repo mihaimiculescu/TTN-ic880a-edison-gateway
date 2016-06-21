@@ -3,7 +3,7 @@
 # Note: I10-13 are mandatory, IO9 is by choice, simply because it is the next available pin ...
 # Edion setup follows to the letter the Arduino for Edison hardware manual.
 # All uncommented lines in this section refer to IO10-13 setup
-echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it
+echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it ...
 echo 115 > /sys/class/gpio/export
 echo 114 > /sys/class/gpio/export
 echo 109 > /sys/class/gpio/export
