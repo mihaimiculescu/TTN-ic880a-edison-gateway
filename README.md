@@ -18,8 +18,8 @@ Detailed instructions will follow soon.
 ##### 2. Clone the installer and start the installation
 
         # git clone https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway.git/ ~/TTN-ic880a-edison-gateway
-        # git checkout spi
         # cd ~/TTN-ic880a-edison-gateway
+        # git checkout spi
         # ./install.sh
 
 ## Update
