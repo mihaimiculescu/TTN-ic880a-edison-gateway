@@ -19,7 +19,8 @@ Detailed instructions will follow soon.
 
       # git clone https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway.git/ ~/TTN-ic880a-edison-gateway
       # cd ~/TTN-ic880a-edison-gateway
-      # ./setup.sh
+      # git checkout spi
+      # ./install.sh
 
 ## Update
 
