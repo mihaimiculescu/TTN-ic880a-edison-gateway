@@ -187,8 +187,8 @@ echo "Installation completed."
 # Start packet forwarder as a service
 cp ./start.sh $INSTALL_DIR/bin/
 cp ./ttn-gateway.service /lib/systemd/system/
-# systemctl enable ttn-gateway.service
+systemctl enable ttn-gateway.service
 
-# echo "The system will reboot in 5 seconds..."
-# sleep 5
-# reboot # replaces shutdown -r now
+echo "The system will reboot in 5 seconds..."
+sleep 5
+reboot # replaces shutdown -r now
