@@ -67,12 +67,12 @@ read -r -p "Do you want to use remote settings file? [y/N]" response
 response=${response,,} # tolower
 
 if [[ $response =~ ^(yes|y) ]]; then
-    NEW_HOSTNAME="ttngateway"
+    NEW_HOSTNAME="ttngtw"
     REMOTE_CONFIG=true
 else
-    printf "       Host name [ttngateway]:"
+    printf "       Host name [ttngtw]:"
     read NEW_HOSTNAME
-    if [[ $NEW_HOSTNAME == "" ]]; then NEW_HOSTNAME="ttngateway"; fi
+    if [[ $NEW_HOSTNAME == "" ]]; then NEW_HOSTNAME="ttngtw"; fi
 
     printf "       Descriptive name [ttn-Edison+ic880a]:"
     read GATEWAY_NAME
