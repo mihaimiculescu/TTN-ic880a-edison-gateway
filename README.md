@@ -11,7 +11,7 @@ Detailed instructions will follow soon.
 
 ## Installation
 ##### 1. If you haven't done so already:
- - 1.1 Flash your Edison with the last Yocto image [as explained here] (http://www.intel.com/content/www/us/en/support/boards-and-kits/000005795.html)
+ - 1.1 Flash your Edison with the latest Yocto image [as explained here] (http://www.intel.com/content/www/us/en/support/boards-and-kits/000005795.html)
  - 1.2 install git [as explained here](https://github.com/w4ilun/edison-guides/wiki/Installing-Git-on-Intel-Edison)
  - 1.3 Login as root - this gives you all the necessary rights. No sudo available on Edison
 
