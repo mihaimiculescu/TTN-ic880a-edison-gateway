@@ -46,6 +46,7 @@ echo mode1 > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
 echo mode1 > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
 echo mode1 > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
 echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux  #mode0 selects GPIO, not PWM for IO9
+echo on > /sys/devices/pci0000\:00/0000\:00\:07.1/power/control #from Intel Edison mraa documentation
 echo high > /sys/class/gpio/gpio214/direction
 # End Edison settings
 
