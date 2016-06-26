@@ -20,11 +20,11 @@ if [[ $(find /usr/i586-poky-linux 2>&1 | grep "/usr/i586-poky-linux") == "" ]]; 
   exit 1
 fi
 
-#Check if the Edison is mounted on an Arduino board, not on the mini breakout board
-if [[ $(cat /sys/kernel/debug/gpio | grep "Arduino Shield") == "" ]]; then
-  echo "[TTN Gateway]: Arduino Shield not present, aborting..."
-  exit 1
-fi
+#Check if the Edison is mounted on an Arduino board, not on the mini breakout board -deprecated
+# if [[ $(cat /sys/kernel/debug/gpio | grep "Arduino Shield") == "" ]]; then
+#  echo "[TTN Gateway]: Arduino Shield not present, aborting..."
+#  exit 1
+# fi
 
 # Update the gateway installer to the correct branch
 echo "Updating installer files..."
