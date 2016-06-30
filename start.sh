@@ -3,51 +3,51 @@
 # Note: I10-13 are mandatory, IO9 is by choice, simply because it is the next available pin ...
 # Edion setup follows to the letter the Arduino for Edison hardware manual.
 # All uncommented lines in this section refer to IO10-13 setup
-# echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it ...
-# echo 115 > /sys/class/gpio/export
-# echo 114 > /sys/class/gpio/export
-# echo 109 > /sys/class/gpio/export
-# echo 263 > /sys/class/gpio/export
-# echo 240 > /sys/class/gpio/export
-# echo 262 > /sys/class/gpio/export
-# echo 241 > /sys/class/gpio/export
-# echo 242 > /sys/class/gpio/export
-# echo 243 > /sys/class/gpio/export
-# echo 258 > /sys/class/gpio/export
-# echo 259 > /sys/class/gpio/export
-# echo 260 > /sys/class/gpio/export
-# echo 261 > /sys/class/gpio/export
-# echo 226 > /sys/class/gpio/export
-# echo 227 > /sys/class/gpio/export
-# echo 228 > /sys/class/gpio/export
-# echo 229 > /sys/class/gpio/export
-# echo 257 > /sys/class/gpio/export
-# echo 225 > /sys/class/gpio/export
-# echo 214 > /sys/class/gpio/export #this is the tri-state-all control. You might get an error also at this line,ignore it
-# echo low > /sys/class/gpio/gpio214/direction #put it in the tri-state status
-# echo high > /sys/class/gpio/gpio263/direction
-# echo high > /sys/class/gpio/gpio240/direction
-# echo high > /sys/class/gpio/gpio262/direction
-# echo high > /sys/class/gpio/gpio241/direction
-# echo high > /sys/class/gpio/gpio242/direction
-# echo high > /sys/class/gpio/gpio243/direction
-# echo high > /sys/class/gpio/gpio258/direction
-# echo high > /sys/class/gpio/gpio259/direction
-# echo low > /sys/class/gpio/gpio260/direction
-# echo high > /sys/class/gpio/gpio261/direction
-# echo high > /sys/class/gpio/gpio257/direction #sets IO9 as output
-# echo in > /sys/class/gpio/gpio225/direction   #disable pullup resistor for IO9
-# echo in > /sys/class/gpio/gpio226/direction
-# echo in > /sys/class/gpio/gpio227/direction
-# echo in > /sys/class/gpio/gpio228/direction
-# echo in > /sys/class/gpio/gpio229/direction
-# echo mode1 > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux
-# echo mode1 > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
-# echo mode1 > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
-# echo mode1 > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
-# echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux  #mode0 selects GPIO, not PWM for IO9
-# echo on > /sys/devices/pci0000\:00/0000\:00\:07.1/power/control #from Intel Edison mraa documentation
-# echo high > /sys/class/gpio/gpio214/direction
+echo 111 > /sys/class/gpio/export # you might get an error at this line, don't mind it ...
+echo 115 > /sys/class/gpio/export
+echo 114 > /sys/class/gpio/export
+echo 109 > /sys/class/gpio/export
+echo 263 > /sys/class/gpio/export
+echo 240 > /sys/class/gpio/export
+echo 262 > /sys/class/gpio/export
+echo 241 > /sys/class/gpio/export
+echo 242 > /sys/class/gpio/export
+echo 243 > /sys/class/gpio/export
+echo 258 > /sys/class/gpio/export
+echo 259 > /sys/class/gpio/export
+echo 260 > /sys/class/gpio/export
+echo 261 > /sys/class/gpio/export
+echo 226 > /sys/class/gpio/export
+echo 227 > /sys/class/gpio/export
+echo 228 > /sys/class/gpio/export
+echo 229 > /sys/class/gpio/export
+echo 257 > /sys/class/gpio/export
+echo 225 > /sys/class/gpio/export
+echo 214 > /sys/class/gpio/export #this is the tri-state-all control. You might get an error also at this line,ignore it
+echo low > /sys/class/gpio/gpio214/direction #put it in the tri-state status
+echo high > /sys/class/gpio/gpio263/direction
+echo high > /sys/class/gpio/gpio240/direction
+echo high > /sys/class/gpio/gpio262/direction
+echo high > /sys/class/gpio/gpio241/direction
+echo high > /sys/class/gpio/gpio242/direction
+echo high > /sys/class/gpio/gpio243/direction
+echo high > /sys/class/gpio/gpio258/direction
+echo high > /sys/class/gpio/gpio259/direction
+echo low > /sys/class/gpio/gpio260/direction
+echo high > /sys/class/gpio/gpio261/direction
+echo high > /sys/class/gpio/gpio257/direction #sets IO9 as output
+echo in > /sys/class/gpio/gpio225/direction   #disable pullup resistor for IO9
+echo in > /sys/class/gpio/gpio226/direction
+echo in > /sys/class/gpio/gpio227/direction
+echo in > /sys/class/gpio/gpio228/direction
+echo in > /sys/class/gpio/gpio229/direction
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
+echo mode1 > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
+echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux  #mode0 selects GPIO, not PWM for IO9
+echo on > /sys/devices/pci0000\:00/0000\:00\:07.1/power/control #from Intel Edison mraa documentation
+echo high > /sys/class/gpio/gpio214/direction
 # echo 111 > /sys/class/gpio/unexport
 # echo 115 > /sys/class/gpio/unexport
 # echo 114 > /sys/class/gpio/unexport
