@@ -48,27 +48,6 @@ echo mode1 > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
 echo mode0 > /sys/kernel/debug/gpio_debug/gpio183/current_pinmux  #mode0 selects GPIO, not PWM for IO9
 echo on > /sys/devices/pci0000\:00/0000\:00\:07.1/power/control #from Intel Edison mraa documentation
 echo high > /sys/class/gpio/gpio214/direction
-echo 111 > /sys/class/gpio/unexport
-echo 115 > /sys/class/gpio/unexport
-echo 114 > /sys/class/gpio/unexport
-echo 109 > /sys/class/gpio/unexport
-echo 263 > /sys/class/gpio/unexport
-echo 240 > /sys/class/gpio/unexport
-echo 262 > /sys/class/gpio/unexport
-echo 241 > /sys/class/gpio/unexport
-echo 242 > /sys/class/gpio/unexport
-echo 243 > /sys/class/gpio/unexport
-echo 258 > /sys/class/gpio/unexport
-echo 259 > /sys/class/gpio/unexport
-echo 260 > /sys/class/gpio/unexport
-echo 261 > /sys/class/gpio/unexport
-echo 226 > /sys/class/gpio/unexport
-echo 227 > /sys/class/gpio/unexport
-echo 228 > /sys/class/gpio/unexport
-echo 229 > /sys/class/gpio/unexport
-echo 257 > /sys/class/gpio/unexport
-echo 225 > /sys/class/gpio/unexport
-echo 214 > /sys/class/gpio/unexport
 # End Edison settings
 
 # Reset iC880A-SPI using IO9 from Arduino
