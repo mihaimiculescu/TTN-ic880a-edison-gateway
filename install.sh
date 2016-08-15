@@ -62,7 +62,6 @@ GATEWAY_EUI=$(ip link show $GATEWAY_EUI_NIC | awk '/ether/ {print $2}' | awk -F\
 GATEWAY_EUI=${GATEWAY_EUI^^} # toupper
 
 echo "Detected EUI $GATEWAY_EUI from $GATEWAY_EUI_NIC"
-# VERIFIED SO FAR
 read -r -p "Do you want to use remote settings file? [y/N]" response
 response=${response,,} # tolower
 
