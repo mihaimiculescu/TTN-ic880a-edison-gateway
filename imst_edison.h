@@ -15,7 +15,7 @@
 #define SPI_SPEED		8000000
 #define SPI_DEV_PATH	"/dev/spidev5.1"
 #define SPI_CS_CHANGE_KO   0 // it affects lines 273 and 327 in https://github.com/mihaimiculescu/lora_gateway/blob/master/libloragw/src/loragw_spi.native.c
-#define SPI_CS_CHANGE   0
+#define SPI_CS_CHANGE   1
 
 /* parameters for a FT2232H - unnecesary as long as USB is not supported */
 #define VID		        0x0403
