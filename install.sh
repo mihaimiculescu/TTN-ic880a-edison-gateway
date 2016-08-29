@@ -120,6 +120,11 @@ pushd $INSTALL_DIR
 # Build LoRa gateway app
 if [ ! -d lora_gateway ]; then
     git clone https://github.com/TheThingsNetwork/lora_gateway.git
+#TODO - remove after having added imst_edison.h to the TTN lora_gateway repo
+    popd
+    cp ./imst_edison.h $INSTALL_DIR/lora_gateway/libloragw/inc
+    pushd $INSTALL_DIR
+#End of TODO - remove after having added imst_edison.h to the TTN lora_gateway repo    
     pushd lora_gateway
 else
     pushd lora_gateway
