@@ -130,6 +130,7 @@ fi
     popd
     popd
     cp ./library.cfg $INSTALL_DIR/lora_gateway/libloragw/
+    cp ./loragw_spi.native.c $INSTALL_DIR/lora_gateway/libloragw/src/
     cp ./imst_edison.h $INSTALL_DIR/lora_gateway/libloragw/inc/
     pushd $INSTALL_DIR
     pushd lora_gateway
