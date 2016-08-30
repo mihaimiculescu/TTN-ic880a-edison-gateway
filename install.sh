@@ -119,22 +119,14 @@ pushd $INSTALL_DIR
 
 # Build LoRa gateway app
 if [ ! -d lora_gateway ]; then
-    git clone https://github.com/TheThingsNetwork/lora_gateway.git
+    git clone https://github.com/mihaimiculescu/lora_gateway.git
     pushd lora_gateway
 else
     pushd lora_gateway
     git reset --hard
     git pull
 fi
-#TODO - remove this code after having added imst_edison.h to the TTN lora_gateway repo
-    popd
-    popd
-    cp ./library.cfg $INSTALL_DIR/lora_gateway/libloragw/
-    cp ./loragw_spi.native.c $INSTALL_DIR/lora_gateway/libloragw/src/
-    cp ./imst_edison.h $INSTALL_DIR/lora_gateway/libloragw/inc/
-    pushd $INSTALL_DIR
-    pushd lora_gateway
-#End of TODO - remove this code after having added imst_edison.h to the TTN lora_gateway repo    
+
 sed -i -e 's/PLATFORM= kerlink/PLATFORM= imst_edison/g' ./libloragw/library.cfg #Modified to include imst_edison.h
 
 make
