@@ -106,10 +106,8 @@ fi
 
 # Install LoRaWAN packet forwarder repositories
 INSTALL_DIR="/opt/ttn-gateway"
-if [ -d "$INSTALL_DIR" ]; then 
-rm -R $INSTALL_DIR
+if [ -d "$INSTALL_DIR" ]; then rm -R $INSTALL_DIR; fi
 mkdir $INSTALL_DIR
-fi
 pushd $INSTALL_DIR
 
 # Remove WiringPi built from source (older installer versions). Not necessary with Edison 
