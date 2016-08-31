@@ -118,14 +118,9 @@ pushd $INSTALL_DIR
 # fi 
 
 # Build LoRa gateway app
-if [ ! -d lora_gateway ]; then
-    git clone https://github.com/mihaimiculescu/lora_gateway.git
-    pushd lora_gateway
-else
-    pushd lora_gateway
-    git reset --hard
-    git pull
-fi
+if [ ! -d lora_gateway ]; then rm -R lora_gateway; fi
+git clone https://github.com/mihaimiculescu/lora_gateway.git
+pushd lora_gateway
 
 sed -i -e 's/PLATFORM= kerlink/PLATFORM= imst_edison/g' ./libloragw/library.cfg #Modified to include imst_edison.h
 
@@ -134,14 +129,9 @@ make
 popd
 
 # Build packet forwarder
-if [ ! -d packet_forwarder ]; then
-    git clone https://github.com/TheThingsNetwork/packet_forwarder.git
-    pushd packet_forwarder
-else
-    pushd packet_forwarder
-    git pull
-    git reset --hard
-fi
+if [ ! -d packet_forwarder ]; then rm -R packet_forwarder ; fi
+git clone https://github.com/TheThingsNetwork/packet_forwarder.git
+pushd packet_forwarder
 
 make
 
