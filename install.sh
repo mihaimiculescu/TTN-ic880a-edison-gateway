@@ -118,7 +118,7 @@ pushd $INSTALL_DIR
 # fi 
 
 # Build LoRa gateway app
-if [ ! -d lora_gateway ]; then rm -R lora_gateway; fi
+if [ -d lora_gateway ]; then rm -R lora_gateway; fi
 git clone https://github.com/mihaimiculescu/lora_gateway.git
 pushd lora_gateway
 
@@ -129,7 +129,7 @@ make
 popd
 
 # Build packet forwarder
-if [ ! -d packet_forwarder ]; then rm -R packet_forwarder ; fi
+if [ -d packet_forwarder ]; then rm -R packet_forwarder ; fi
 git clone https://github.com/TheThingsNetwork/packet_forwarder.git
 pushd packet_forwarder
 
