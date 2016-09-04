@@ -4,7 +4,7 @@ CONDITIONS
 -In imst_edison.h
 SPI_SPEED		8000000
 SPI_DEV_PATH	"/dev/spidev5.1"
-SPI_CS_CHANGE_KO   0
+SPI_CS_CHANGE_KO   1
 SPI_CS_CHANGE   0
 -In library.cfg
 DEBUG_SPI= 1
