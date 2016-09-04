@@ -1,0 +1,14 @@
+test no.6
+
+CONDITIONS
+-In imst_edison.h
+SPI_SPEED		6250000
+SPI_DEV_PATH	"/dev/spidev5.1"
+SPI_CS_CHANGE_KO   1
+SPI_CS_CHANGE   1
+-In library.cfg
+DEBUG_SPI= 1
+
+RESULTS
+
+./start.sh
