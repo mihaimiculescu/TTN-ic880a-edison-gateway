@@ -1,0 +1,369 @@
+[TTN Gateway]: Internet connection present
+/opt/ttn-gateway/gateway-remote-config /opt/ttn-gateway/bin
+Already up-to-date.
+HEAD is now at 9a83a18 Merge pull request #12 from dbrgn/patch-1
+/opt/ttn-gateway/bin
+[TTN Gateway]: Use Gateway EUI 784B87FFFE99922D based on wlan0
+*** Poly Packet Forwarder for Lora Gateway ***
+Version: 2.1.0
+*** Lora concentrator HAL library version info ***
+Version: 3.1.0; Options: native;
+***
+INFO: Little endian host
+INFO: found global configuration file global_conf.json, parsing it
+INFO: global_conf.json does contain a JSON object named SX1301_conf, parsing SX1301 parameters
+INFO: lorawan_public 1, clksrc 1
+INFO: Configuring TX LUT with 16 indexes
+INFO: radio 0 enabled (type SX1257), center frequency 867500000, RSSI offset -166.000000, tx enabled 1
+INFO: radio 1 enabled (type SX1257), center frequency 868500000, RSSI offset -166.000000, tx enabled 0
+INFO: Lora multi-SF channel 0>  radio 1, IF -400000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 1>  radio 1, IF -200000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 2>  radio 1, IF 0 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 3>  radio 0, IF -400000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 4>  radio 0, IF -200000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 5>  radio 0, IF 0 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 6>  radio 0, IF 200000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 7>  radio 0, IF 400000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora std channel> radio 1, IF -200000 Hz, 250000 Hz bw, SF 7
+INFO: FSK channel> radio 1, IF 300000 Hz, 125000 Hz bw, 50000 bps datarate
+INFO: global_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+INFO: gateway MAC address is configured to AA555A0000000000
+INFO: Found 2 servers in array.
+INFO: Server 0 configured to "127.0.0.1", with port up "1680" and port down "1681"
+INFO: Server 1 configured to "iot.semtech.com", with port up "1680" and port down "1680"
+INFO: Found 5 system calls in array.
+INFO: System command 0: "df -m"
+INFO: System command 1: "free -h"
+INFO: System command 2: "uptime"
+INFO: System command 3: "who -a"
+INFO: System command 4: "uname -a"
+INFO: monitor hostname or IP address is configured to "127.0.0.1"
+INFO: monitor port is configured to "2008"
+INFO: ghost hostname or IP address is configured to "127.0.0.1"
+INFO: ghost port is configured to "1918"
+INFO: downstream keep-alive interval is configured to 10 seconds
+INFO: statistics display interval is configured to 30 seconds
+INFO: upstream PUSH_DATA time-out is configured to 100 ms
+INFO: packets received with a valid CRC will be forwarded
+INFO: packets received with a CRC error will NOT be forwarded
+INFO: packets received with no CRC will NOT be forwarded
+INFO: GPS serial port path is configured to "/dev/ttyAMA0"
+INFO: SSH path is configured to "/usr/bin/ssh"
+INFO: SSH port is configured to 22
+INFO: HTTP port is configured to 80
+INFO: NGROK path is configured to "/usr/bin/ngrok"
+INFO: Reference latitude is configured to 10.000000 deg
+INFO: Reference longitude is configured to 20.000000 deg
+INFO: Reference altitude is configured to -1 meters
+INFO: GPS is enabled
+INFO: Using fake GPS coordinates instead of real.
+INFO: Upstream data is enabled
+INFO: Downstream data is enabled
+INFO: Ghoststream data is disabled
+INFO: Radiostream data is enabled
+INFO: Statusstream data is enabled
+INFO: Beacon is disabled
+INFO: Monitor is disabled
+INFO: Platform configured to "IMST + Edison on Arduino2008"
+INFO: Contact email configured to "operator@gateway.tst"
+INFO: Description configured to "Update me"
+INFO: found local configuration file local_conf.json, parsing it
+INFO: redefined parameters will overwrite global parameters
+INFO: local_conf.json does not contain a JSON object named SX1301_conf
+INFO: local_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+INFO: gateway MAC address is configured to 784B87FFFE99922D
+INFO: Found 1 servers in array.
+INFO: Server 0 configured to "router.eu.thethings.network", with port up "1700" and port down "1700"
+INFO: packets received with a valid CRC will be forwarded
+INFO: packets received with a CRC error will NOT be forwarded
+INFO: packets received with no CRC will NOT be forwarded
+INFO: Reference latitude is configured to 44.411196 deg
+INFO: Reference longitude is configured to 26.069725 deg
+INFO: Reference altitude is configured to 97 meters
+INFO: GPS is enabled
+INFO: Using fake GPS coordinates instead of real.
+INFO: Upstream data is enabled
+INFO: Downstream data is enabled
+INFO: Ghoststream data is disabled
+INFO: Radiostream data is enabled
+INFO: Statusstream data is enabled
+INFO: Beacon is disabled
+INFO: Monitor is disabled
+INFO: Contact email configured to "mihaimiculescu@yahoo.com"
+INFO: Description configured to "Bucharest iC880A-SPI + Edison on Arduino"
+INFO: Successfully contacted server router.eu.thethings.network
+INFO: [main] Starting the concentrator
+Note: SPI port opened and configured ok
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+lgw_spi_wb:281: BURST WRITE: to trans 8192 # chunk 1024 # transferred 1024
+lgw_spi_wb:281: BURST WRITE: to trans 7168 # chunk 1024 # transferred 2048
+lgw_spi_wb:281: BURST WRITE: to trans 6144 # chunk 1024 # transferred 3072
+lgw_spi_wb:281: BURST WRITE: to trans 5120 # chunk 1024 # transferred 4096
+lgw_spi_wb:281: BURST WRITE: to trans 4096 # chunk 1024 # transferred 5120
+lgw_spi_wb:281: BURST WRITE: to trans 3072 # chunk 1024 # transferred 6144
+lgw_spi_wb:281: BURST WRITE: to trans 2048 # chunk 1024 # transferred 7168
+lgw_spi_wb:281: BURST WRITE: to trans 1024 # chunk 1024 # transferred 8192
+Note: SPI burst write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+ERROR: Version of calibration firmware not expected, actual:112 expected:2
+ERROR: [main] failed to start the concentrator
