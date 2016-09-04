@@ -1,4 +1,4 @@
-test no.1
+test no.2
 
 CONDITIONS
 -In imst_edison.h
@@ -11,6 +11,7 @@ DEBUG_SPI= 1
 
 RESULTS
 
+./start.sh
 [TTN Gateway]: Internet connection present
 /opt/ttn-gateway/gateway-remote-config /opt/ttn-gateway/bin
 Already up-to-date.
