@@ -1,0 +1,1105 @@
+test no.5
+
+CONDITIONS
+-In imst_edison.h
+SPI_SPEED		6250000
+SPI_DEV_PATH	"/dev/spidev5.1"
+SPI_CS_CHANGE_KO   0
+SPI_CS_CHANGE   0
+-In library.cfg
+DEBUG_SPI= 1
+
+RESULTS
+
+./start.sh
+[TTN Gateway]: Internet connection present
+/opt/ttn-gateway/gateway-remote-config /opt/ttn-gateway/bin
+Already up-to-date.
+HEAD is now at 9a83a18 Merge pull request #12 from dbrgn/patch-1
+/opt/ttn-gateway/bin
+[TTN Gateway]: Use Gateway EUI 784B87FFFE99922D based on wlan0
+*** Poly Packet Forwarder for Lora Gateway ***
+Version: 2.1.0
+*** Lora concentrator HAL library version info ***
+Version: 3.1.0; Options: native;
+***
+INFO: Little endian host
+INFO: found global configuration file global_conf.json, parsing it
+INFO: global_conf.json does contain a JSON object named SX1301_conf, parsing SX1301 parameters
+INFO: lorawan_public 1, clksrc 1
+INFO: Configuring TX LUT with 16 indexes
+INFO: radio 0 enabled (type SX1257), center frequency 867500000, RSSI offset -166.000000, tx enabled 1
+INFO: radio 1 enabled (type SX1257), center frequency 868500000, RSSI offset -166.000000, tx enabled 0
+INFO: Lora multi-SF channel 0>  radio 1, IF -400000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 1>  radio 1, IF -200000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 2>  radio 1, IF 0 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 3>  radio 0, IF -400000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 4>  radio 0, IF -200000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 5>  radio 0, IF 0 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 6>  radio 0, IF 200000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora multi-SF channel 7>  radio 0, IF 400000 Hz, 125 kHz bw, SF 7 to 12
+INFO: Lora std channel> radio 1, IF -200000 Hz, 250000 Hz bw, SF 7
+INFO: FSK channel> radio 1, IF 300000 Hz, 125000 Hz bw, 50000 bps datarate
+INFO: global_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+INFO: gateway MAC address is configured to AA555A0000000000
+INFO: Found 2 servers in array.
+INFO: Server 0 configured to "127.0.0.1", with port up "1680" and port down "1681"
+INFO: Server 1 configured to "iot.semtech.com", with port up "1680" and port down "1680"
+INFO: Found 5 system calls in array.
+INFO: System command 0: "df -m"
+INFO: System command 1: "free -h"
+INFO: System command 2: "uptime"
+INFO: System command 3: "who -a"
+INFO: System command 4: "uname -a"
+INFO: monitor hostname or IP address is configured to "127.0.0.1"
+INFO: monitor port is configured to "2008"
+INFO: ghost hostname or IP address is configured to "127.0.0.1"
+INFO: ghost port is configured to "1918"
+INFO: downstream keep-alive interval is configured to 10 seconds
+INFO: statistics display interval is configured to 30 seconds
+INFO: upstream PUSH_DATA time-out is configured to 100 ms
+INFO: packets received with a valid CRC will be forwarded
+INFO: packets received with a CRC error will NOT be forwarded
+INFO: packets received with no CRC will NOT be forwarded
+INFO: GPS serial port path is configured to "/dev/ttyAMA0"
+INFO: SSH path is configured to "/usr/bin/ssh"
+INFO: SSH port is configured to 22
+INFO: HTTP port is configured to 80
+INFO: NGROK path is configured to "/usr/bin/ngrok"
+INFO: Reference latitude is configured to 10.000000 deg
+INFO: Reference longitude is configured to 20.000000 deg
+INFO: Reference altitude is configured to -1 meters
+INFO: GPS is enabled
+INFO: Using fake GPS coordinates instead of real.
+INFO: Upstream data is enabled
+INFO: Downstream data is enabled
+INFO: Ghoststream data is disabled
+INFO: Radiostream data is enabled
+INFO: Statusstream data is enabled
+INFO: Beacon is disabled
+INFO: Monitor is disabled
+INFO: Platform configured to "IMST + Edison on Arduino2008"
+INFO: Contact email configured to "operator@gateway.tst"
+INFO: Description configured to "Update me"
+INFO: found local configuration file local_conf.json, parsing it
+INFO: redefined parameters will overwrite global parameters
+INFO: local_conf.json does not contain a JSON object named SX1301_conf
+INFO: local_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+INFO: gateway MAC address is configured to 784B87FFFE99922D
+INFO: Found 1 servers in array.
+INFO: Server 0 configured to "router.eu.thethings.network", with port up "1700" and port down "1700"
+INFO: packets received with a valid CRC will be forwarded
+INFO: packets received with a CRC error will NOT be forwarded
+INFO: packets received with no CRC will NOT be forwarded
+INFO: Reference latitude is configured to 44.411196 deg
+INFO: Reference longitude is configured to 26.069725 deg
+INFO: Reference altitude is configured to 97 meters
+INFO: GPS is enabled
+INFO: Using fake GPS coordinates instead of real.
+INFO: Upstream data is enabled
+INFO: Downstream data is enabled
+INFO: Ghoststream data is disabled
+INFO: Radiostream data is enabled
+INFO: Statusstream data is enabled
+INFO: Beacon is disabled
+INFO: Monitor is disabled
+INFO: Contact email configured to "mihaimiculescu@yahoo.com"
+INFO: Description configured to "Bucharest iC880A-SPI + Edison on Arduino"
+INFO: Successfully contacted server router.eu.thethings.network
+INFO: [main] Starting the concentrator
+Note: SPI port opened and configured ok
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+lgw_spi_wb:281: BURST WRITE: to trans 8192 # chunk 1024 # transferred 1024
+lgw_spi_wb:281: BURST WRITE: to trans 7168 # chunk 1024 # transferred 2048
+lgw_spi_wb:281: BURST WRITE: to trans 6144 # chunk 1024 # transferred 3072
+lgw_spi_wb:281: BURST WRITE: to trans 5120 # chunk 1024 # transferred 4096
+lgw_spi_wb:281: BURST WRITE: to trans 4096 # chunk 1024 # transferred 5120
+lgw_spi_wb:281: BURST WRITE: to trans 3072 # chunk 1024 # transferred 6144
+lgw_spi_wb:281: BURST WRITE: to trans 2048 # chunk 1024 # transferred 7168
+lgw_spi_wb:281: BURST WRITE: to trans 1024 # chunk 1024 # transferred 8192
+Note: SPI burst write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+ERROR: Version of calibration firmware not expected, actual:112 expected:2
+ERROR: [main] failed to start the concentrator
+
+./test_loragw_reg
+Beginning of test for loragw_reg.c
+Note: SPI port opened and configured ok
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+Note: SPI write success
+Start of register verification
+Note: SPI read success
++++MATCH+++ reg number 0 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 1 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 2 read: 103 (67) default: 103 (67)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 3 read: 0 (0) default: 0 (0)
+Note: SPI read success
+###MISMATCH### reg number 4 read: 48 (30) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 5 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 6 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 7 read: 0 (0) default: 0 (0)
+Note: SPI read success
+###MISMATCH### reg number 8 read: 153 (99) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 9 read: 0 (0) default: 0 (0)
+Note: SPI read success
+###MISMATCH### reg number 10 read: 81 (51) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 11 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 12 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 13 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 14 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 15 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 16 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 17 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 18 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 19 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 20 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 21 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 22 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 23 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 24 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 25 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 26 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 27 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 28 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 29 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 30 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 31 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 32 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 33 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 34 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 35 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 36 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 37 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 38 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 39 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 40 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 41 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 42 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 43 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 44 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 45 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 46 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 47 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 48 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 49 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 50 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 51 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 52 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 53 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 54 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 55 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 56 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 57 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 58 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 59 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 60 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 61 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 62 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 63 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 64 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 65 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 66 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 67 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 68 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 69 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 70 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 71 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 72 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 73 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 74 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 75 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 76 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 77 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 78 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 79 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 80 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 81 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 82 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 83 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 84 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 85 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 86 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 87 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 88 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 89 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 90 read: 7 (7) default: 7 (7)
+Note: SPI read success
++++MATCH+++ reg number 91 read: 240 (f0) default: 240 (f0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 92 read: 0 (0) default: -384 (fffffe80)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 93 read: 0 (0) default: -128 (ffffff80)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 94 read: 0 (0) default: 128 (80)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 95 read: 0 (0) default: 384 (180)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 96 read: 0 (0) default: -384 (fffffe80)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 97 read: 0 (0) default: -128 (ffffff80)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 98 read: 0 (0) default: 128 (80)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 99 read: 0 (0) default: 384 (180)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 100 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 101 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 102 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 103 read: 7 (7) default: 7 (7)
+Note: SPI read success
++++MATCH+++ reg number 104 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 105 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 106 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 107 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 108 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 109 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 110 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 111 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 112 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 113 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 114 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 115 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 116 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 117 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 118 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 119 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 120 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 121 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 122 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 123 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 124 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 125 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 126 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 127 read: 5 (5) default: 5 (5)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 128 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 129 read: 0 (0) default: 4092 (ffc)
+Note: SPI read success
++++MATCH+++ reg number 130 read: 7 (7) default: 7 (7)
+Note: SPI read success
++++MATCH+++ reg number 131 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 132 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 133 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 134 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 135 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 136 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 137 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 138 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 139 read: 29 (1d) default: 29 (1d)
+Note: SPI read success
++++MATCH+++ reg number 140 read: 9 (9) default: 9 (9)
+Note: SPI read success
++++MATCH+++ reg number 141 read: 2 (2) default: 2 (2)
+Note: SPI read success
++++MATCH+++ reg number 142 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 143 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 144 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 145 read: 2 (2) default: 2 (2)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 146 read: 0 (0) default: 10 (a)
+Note: SPI read success
++++MATCH+++ reg number 147 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 148 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 149 read: 8 (8) default: 8 (8)
+Note: SPI read success
++++MATCH+++ reg number 150 read: 2 (2) default: 2 (2)
+Note: SPI read success
++++MATCH+++ reg number 151 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 152 read: 255 (ff) default: 255 (ff)
+Note: SPI read success
++++MATCH+++ reg number 153 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 154 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 155 read: 8 (8) default: 8 (8)
+Note: SPI read success
++++MATCH+++ reg number 156 read: 7 (7) default: 7 (7)
+Note: SPI read success
++++MATCH+++ reg number 157 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 158 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 159 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 160 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 161 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 162 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 163 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 164 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 165 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 166 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 167 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 168 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 169 read: 32 (20) default: 32 (20)
+Note: SPI read success
++++MATCH+++ reg number 170 read: 100 (64) default: 100 (64)
+Note: SPI read success
++++MATCH+++ reg number 171 read: 100 (64) default: 100 (64)
+Note: SPI read success
++++MATCH+++ reg number 172 read: 7 (7) default: 7 (7)
+Note: SPI read success
++++MATCH+++ reg number 173 read: 5 (5) default: 5 (5)
+Note: SPI read success
++++MATCH+++ reg number 174 read: 8 (8) default: 8 (8)
+Note: SPI read success
++++MATCH+++ reg number 175 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 176 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 177 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 178 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 179 read: 0 (0) default: 0 (0)
+Note: SPI write success
+Note: SPI read success
++++MATCH+++ reg number 180 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 181 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 182 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 183 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 184 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 185 read: 2 (2) default: 2 (2)
+Note: SPI read success
++++MATCH+++ reg number 186 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 187 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 188 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 189 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 190 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 191 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 192 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 193 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 194 read: 5 (5) default: 5 (5)
+Note: SPI read success
++++MATCH+++ reg number 195 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 196 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 197 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 198 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 199 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 200 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 201 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 202 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 203 read: 2 (2) default: 2 (2)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 204 read: 0 (0) default: 10 (a)
+Note: SPI read success
++++MATCH+++ reg number 205 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 206 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 207 read: 10 (a) default: 10 (a)
+Note: SPI read success
++++MATCH+++ reg number 208 read: 3 (3) default: 3 (3)
+Note: SPI read success
++++MATCH+++ reg number 209 read: 29 (1d) default: 29 (1d)
+Note: SPI read success
++++MATCH+++ reg number 210 read: 36 (24) default: 36 (24)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 211 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 212 read: 2 (2) default: 2 (2)
+Note: SPI read success
++++MATCH+++ reg number 213 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 214 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 215 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 216 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 217 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 218 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 219 read: 8 (8) default: 8 (8)
+Note: SPI read success
++++MATCH+++ reg number 220 read: 3 (3) default: 3 (3)
+Note: SPI read success
++++MATCH+++ reg number 221 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 222 read: 7 (7) default: 7 (7)
+Note: SPI read success
++++MATCH+++ reg number 223 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 224 read: 255 (ff) default: 255 (ff)
+Note: SPI read success
++++MATCH+++ reg number 225 read: 128 (80) default: 128 (80)
+Note: SPI read success
++++MATCH+++ reg number 226 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 227 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 228 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 229 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 230 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 231 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 232 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 233 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 234 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 235 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 236 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 4 # chunk 4 # transferred 4
+Note: SPI burst read success
++++MATCH+++ reg number 237 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 4 # chunk 4 # transferred 4
+Note: SPI burst read success
++++MATCH+++ reg number 238 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 239 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 240 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 241 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 242 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 243 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 244 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 245 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 246 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 247 read: 1 (1) default: 1 (1)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+###MISMATCH### reg number 248 read: 256 (100) default: 0 (0)
+Note: SPI write success
+Note: SPI read success
++++MATCH+++ reg number 249 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 250 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 251 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 252 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 253 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 254 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 255 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 256 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 257 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 258 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 259 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 260 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 261 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 262 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 263 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 264 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 265 read: 2 (2) default: 2 (2)
+Note: SPI read success
++++MATCH+++ reg number 266 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 267 read: 2 (2) default: 2 (2)
+Note: SPI read success
++++MATCH+++ reg number 268 read: 4 (4) default: 4 (4)
+Note: SPI read success
++++MATCH+++ reg number 269 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 270 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 271 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 272 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 273 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 274 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 275 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 276 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 277 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 278 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 279 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 280 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 281 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 282 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 283 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 284 read: 0 (0) default: 0 (0)
+Note: SPI read success
+###MISMATCH### reg number 285 read: 182 (b6) default: 0 (0)
+Note: SPI read success
+###MISMATCH### reg number 286 read: 192 (c0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 287 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 288 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 4 # chunk 4 # transferred 4
+Note: SPI burst read success
++++MATCH+++ reg number 289 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 290 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 291 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 292 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 293 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 294 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 295 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 296 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 297 read: 0 (0) default: 0 (0)
+Note: SPI read success
+###MISMATCH### reg number 298 read: 7 (7) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 299 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 300 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 301 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 302 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 303 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 304 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 305 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 306 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 307 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 308 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 309 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 310 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 311 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 312 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 313 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 314 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 315 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 316 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 317 read: 1 (1) default: 1 (1)
+Note: SPI read success
++++MATCH+++ reg number 318 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 319 read: 0 (0) default: 0 (0)
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
++++MATCH+++ reg number 320 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 321 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 322 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 323 read: 0 (0) default: 0 (0)
+Note: SPI read success
++++MATCH+++ reg number 324 read: 0 (0) default: 0 (0)
+Note: SPI write success
+Note: SPI read success
++++MATCH+++ reg number 325 read: 0 (0) default: 0 (0)
+End of register verification
+Note: SPI write success
+Note: SPI write success
+Note: SPI read success
+IMPLICIT_PAYLOAD_LENGHT = 197 (should be 197)
+Note: SPI read success
+Note: SPI write success
+Note: SPI read success
+FRAME_SYNCH_PEAK2_POS = 11 (should be 11)
+lgw_spi_wb:281: BURST WRITE: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst write success
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+PREAMBLE_SYMB1_NB = 0 (should be 49253)
+lgw_spi_wb:281: BURST WRITE: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst write success
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+ADJUST_MODEM_START_OFFSET_SF12_RDX4 = 0 (should be 3173)
+lgw_spi_wb:281: BURST WRITE: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst write success
+lgw_spi_rb:335: BURST READ: to trans 2 # chunk 2 # transferred 2
+Note: SPI burst read success
+IF_FREQ_1 = 0 (should be -1947)
+lgw_spi_wb:281: BURST WRITE: to trans 256 # chunk 256 # transferred 256
+Note: SPI burst write success
+lgw_spi_rb:335: BURST READ: to trans 256 # chunk 256 # transferred 256
+Note: SPI burst read success
+Note: SPI port closed
+End of test for loragw_reg.c
