@@ -1,3 +1,16 @@
+test no.1
+
+CONDITIONS
+-In imst_edison.h
+SPI_SPEED		8000000
+SPI_DEV_PATH	"/dev/spidev5.1"
+SPI_CS_CHANGE_KO   1
+SPI_CS_CHANGE   1
+-In library.cfg
+DEBUG_SPI= 1
+
+RESULTS
+
 [TTN Gateway]: Internet connection present
 /opt/ttn-gateway/gateway-remote-config /opt/ttn-gateway/bin
 Already up-to-date.
