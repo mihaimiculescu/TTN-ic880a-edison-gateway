@@ -1,6 +1,6 @@
 Repos used:
 1.
-https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway/tree/spi/ for installer files
+https://github.com/mihaimiculescu/TTN-ic880a-edison-gateway/tree/spi/ for installer files<br>
 2.
 https://github.com/mihaimiculescu/lora_gateway/ for SPI driver.
 It contains a slightly modified [loragw_spi.native.c](https://github.com/mihaimiculescu/lora_gateway/blob/master/libloragw/src/loragw_spi.native.c) file to accomodate
