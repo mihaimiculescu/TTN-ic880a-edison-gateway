@@ -8,5 +8,5 @@ It contains a slightly modified [loragw_spi.native.c](https://github.com/mihaimi
 https://github.com/TheThingsNetwork/packet_forwarder. for the packets forwarding software<br>
 For each test, ./start.sh was run - see result at line #393 in each log file<br>
 After that - ./test_loragw_reg was run<br>
-Easch log file contains different combinations of settings for SPI_SPEED, SPI_CS_CHANGE_KO and SPI_CS_CHANGE,<br>
+Each log file contains the behavior of the system for different combinations of settings for SPI_SPEED, SPI_CS_CHANGE_KO and SPI_CS_CHANGE,<br>
 as defined in [imst_edison.h](https://github.com/mihaimiculescu/lora_gateway/blob/master/libloragw/inc/imst_edison.h)
