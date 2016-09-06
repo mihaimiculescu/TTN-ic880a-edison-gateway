@@ -6,6 +6,6 @@ https://github.com/mihaimiculescu/lora_gateway/ for SPI driver.<br>
 It contains a slightly modified [loragw_spi.native.c](https://github.com/mihaimiculescu/lora_gateway/blob/master/libloragw/src/loragw_spi.native.c) file to accomodate the overrides provided by the [imst_edison.h](https://github.com/mihaimiculescu/lora_gateway/blob/master/libloragw/inc/imst_edison.h) file<br>
 3.<br>
 https://github.com/TheThingsNetwork/packet_forwarder. for the packets forwarding software<br>
-For each teat, ./start.sh was run - see result at line #393 in each log file<br>
+For each test, ./start.sh was run - see result at line #393 in each log file<br>
 After that - ./test_loragw_reg was run<br>
-Easch logfile contains different combinations of settings for SPI_SPEED, SPI_CS_CHANGE_KO and SPI_CS_CHANGE
+Easch log file contains different combinations of settings for SPI_SPEED, SPI_CS_CHANGE_KO and SPI_CS_CHANGE
