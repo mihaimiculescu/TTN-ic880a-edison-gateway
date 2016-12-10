@@ -1,4 +1,5 @@
 # The Things Network: Intel Edison + iC880A - based gateway
+Reference setup for [The Things Network](http://thethingsnetwork.org/) gateways based on the iC880a SPI concentrator with a Intel® Edison Kit for Arduino as host.
 ##### __________________________________________________________
 ### - work in progress !
 ##### Current status:
@@ -7,7 +8,6 @@
 ##### 3. The SPI misbehavior is due to well-known Yocto distro issues that have been duly reported to Intel, but not fixed yet.
 #### 4. To whom might be interested in fixing the distro issue: please let me know if or when it's fixed, so that I can verify on the Edison! Thanks in advance.
 ##### __________________________________________________________
-Reference setup for [The Things Network](http://thethingsnetwork.org/) gateways based on the iC880a SPI concentrator with a Intel® Edison Kit for Arduino as host.
 
 This installer targets the **SPI version** of the board. The **USB** version is **not supported**
 
