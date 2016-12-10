@@ -2,7 +2,7 @@
 ## - work in progress !
 #### Current status:
 #### 1. The installer works just fine. Also the start.sh file does its thing.
-#### 2. On Edison, the hardware (SPI interface) doesn't respond well due to well-known Yocto distro issues that have been duly reported but not fixed yet.
+#### 2. On Edison, the hardware (SPI interface) doesn't respond well due to well-known Yocto distro issues that have been duly reported to Intel, but not fixed yet.
 #### 3. To whom might be interested in fixing the distro issue: please let me know if or when it's fixed, so that I can verify on the Edison! Thanks in advance.
 
 Reference setup for [The Things Network](http://thethingsnetwork.org/) gateways based on the iC880a SPI concentrator with a Intel® Edison Kit for Arduino as host.
