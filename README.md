@@ -1,11 +1,11 @@
 # The Things Network: Intel Edison + iC880A - based gateway
 ##### __________________________________________________________
-## - work in progress !
-#### Current status:
-#### 1. The installer works just fine. Also the start.sh file does its thing.
-#### 2. On the Edison, the hardware (SPI interface) doesn't respond well, preventing the iC880-A to start properly.
-#### 3. The SPI misbehavior is due to well-known Yocto distro issues that have been duly reported to Intel, but not fixed yet.
-### 4. To whom might be interested in fixing the distro issue: please let me know if or when it's fixed, so that I can verify on the Edison! Thanks in advance.
+### - work in progress !
+##### Current status:
+##### 1. The installer works just fine. Also the start.sh file does its thing.
+##### 2. On the Edison, the hardware (SPI interface) doesn't respond well, preventing the iC880-A to start properly.
+##### 3. The SPI misbehavior is due to well-known Yocto distro issues that have been duly reported to Intel, but not fixed yet.
+#### 4. To whom might be interested in fixing the distro issue: please let me know if or when it's fixed, so that I can verify on the Edison! Thanks in advance.
 ##### __________________________________________________________
 Reference setup for [The Things Network](http://thethingsnetwork.org/) gateways based on the iC880a SPI concentrator with a Intel® Edison Kit for Arduino as host.
 
