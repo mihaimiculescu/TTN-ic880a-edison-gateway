@@ -133,7 +133,7 @@ sed -i -e 's/spidev0.0/spidev5.1/g' ./libloragw/inc/imst_rpi.h
 sed -i -e 's/IMST + Rpi/Edison + IMST/g' ./libloragw/inc/imst_rpi.h
 #END
 
-#Debugging section - uncomment only one at the time to prevent mega verbose!
+#Debugging section - uncomment only one at the time to prevent mega verbosing!
 #sed -i -e 's/DEBUG_AUX= 0/DEBUG_AUX= 1/g' ./libloragw/library.cfg
 #sed -i -e 's/DEBUG_SPI= 0/DEBUG_SPI= 1/g' ./libloragw/library.cfg
 #sed -i -e 's/DEBUG_REG= 0/DEBUG_REG= 1/g' ./libloragw/library.cfg
