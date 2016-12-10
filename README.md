@@ -12,7 +12,7 @@ This installer targets the **SPI version** of the board. The **USB** version is 
 ## Setup
 - Connect the iC880a-SPI board to the Arduino [as shown in this picture](images/Connexions.jpg)
 - Note: If you want to use also the [Grove base shield](http://www.seeedstudio.com/wiki/Base_shield_v2), do NOT use the Grove connector D8, as it is connected to the iC880! Also i2c functionality is disabled.
-- Recommended logic levels shifter: [TXB0108](http://www.ti.com/product/TXB0108)
+- Recommended voltage-level shifter: [TXB0108](http://www.ti.com/product/TXB0108)
 - Detailed instructions will follow soon. 
 
 ## Installation
