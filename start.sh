@@ -21,8 +21,8 @@ echo 226 > /sys/class/gpio/export
 echo 227 > /sys/class/gpio/export
 echo 228 > /sys/class/gpio/export
 echo 229 > /sys/class/gpio/export
-echo 257 > /sys/class/gpio/export
-echo 225 > /sys/class/gpio/export
+echo 257 > /sys/class/gpio/export # for IO9
+echo 225 > /sys/class/gpio/export # for IO9
 echo 214 > /sys/class/gpio/export #this is the tri-state-all control. You might get an error also at this line,ignore it
 echo low > /sys/class/gpio/gpio214/direction #put it in the tri-state status
 echo high > /sys/class/gpio/gpio263/direction
